@@ -24,13 +24,13 @@
         
         <div id="acessibilidade" class="menu-acessibilidade">
             <button id="botao-acessibilidade" class="btn btn-ptimary
-            fw-bold rotacao-botao">acessibilidade</button>
+            fw-bold rotacao-botao"aria-expanded="false">acessibilidade</button>
             <div id="opcoes-acessibilidade" class="opcoes-acessibilidade
             apresenta-lista">
                 <button id="aumnetar-fonte" class="btn btn-primary
-                fw-bold">A+</button>
+                fw-bold" aria-label="aumnetar o tamanho da fonte">A+</button>
                 <button id="diminuir-fonte" class="btn btn-primary
-                fw-bold">A-</button>  
+                fw-bold" aria-label="diminuir o tamanho da fonte">A-</button>  
                 <button id="alterna-contraste" class="btn btn-primary
                 fw-bold"><i class="bi bi-shadows"></i></button>
               
@@ -47,7 +47,10 @@
         <section id="inicio" class="my-5">
             <div class="inicio-fundo d-flex justify-content-between align-items-center">
                 <div class="esquerda-conteudo">
-                    <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas a</h1>
+                    <h1 class="display-4 t   alternaContraste.addEventListener('click', function(){
+                        document.body.classList.toggle('alto-contraste')
+                    })
+                 ext-white fst-italic fw-bold">Boas-vindas a</h1>
                     <img src="img/logo-2.png" alt="Logotipo secundário da Tropicália" class="mb-3" width="563"
                         height="278" loading="lazy">
                     <a href="#tropicalia"
@@ -60,7 +63,7 @@
 
         <section id="tropicalia" class="my-5 pt-6 secao-tropicalia" tabindex="0" aria-label="Seção explicativa sobre a Tropicália">
             <div class="container d-flex align-items-center ">
-                <div class="col-4 d- flex justify-content-center"></div>
+                <div class="col-4 d- flex justify-content-center fundo-galeria">
                 <img src="img/image (1).png" class="rounded-pill" width="273" height="331" loading="lazy">
                   <div class="col-5">
                     <h2>O que foi a Tropicália?</h2>
